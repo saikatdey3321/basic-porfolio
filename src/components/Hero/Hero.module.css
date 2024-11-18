@@ -1,0 +1,133 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 10%; /* Simplified margin */
+  z-index: 1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--color-text);
+  z-index: 1;
+  max-width: 60%; /* Limits text width for better readability */
+}
+
+.title {
+  font-size: 64px; /* Reduced for better responsiveness */
+  font-weight: 900;
+  margin-bottom: 30px;
+  font-family: var(--font-roboto);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(255, 255, 255, 0) 120%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.description {
+  font-size: 24px; /* Reduced font size for improved balance */
+  font-family: var(--font-roboto);
+  margin-bottom: 40px;
+}
+
+.contactBtn {
+  text-decoration: none;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  border-radius: 50px; /* Smoother button shape */
+  font-size: 18px; /* Adjusted size for better proportions */
+  font-weight: 600;
+  padding: 15px 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25); /* Slightly softer shadow */
+}
+
+.heroImg {
+  width: 250px; /* Adjusted width */
+  height: 250px; /* Adjusted height */
+  border-radius: 50%; /* Perfect circle */
+  object-fit: cover; /* Ensures image fits within the circle */
+  background-color: #0f1c3f; /* Match background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly deeper shadow for emphasis */
+  z-index: 1;
+
+  /* Floating animation */
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.topBlur {
+  position: absolute;
+  width: 40vw;
+  height: 40vw;
+  top: -150px;
+  left: -15vw;
+  border-radius: 50%;
+  background: rgba(25, 55, 109, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.bottomBlur {
+  position: absolute;
+  width: 60vw;
+  height: 40vw;
+  top: 200px;
+  right: -20vw;
+  border-radius: 50%;
+  background: rgba(25, 55, 109, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .content {
+    align-items: center;
+    max-width: 90%; /* Text spans full width on small screens */
+  }
+
+  .title {
+    font-size: 48px; /* Adjust title for smaller screens */
+  }
+
+  .description {
+    font-size: 20px;
+  }
+
+  .heroImg {
+    width: 200px;
+    height: 200px;
+  }
+
+  .contactBtn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "role": "React Developer",
+    "organisation": "Shunya Intelliware Solutions",
+    "startDate": "Jan, 2024",
+    "endDate": "Jun, 2024",
+    "experiences": [
+      "Developed complex web applications using React and other related technologies.",
+      "Collaborated with cross-functional teams to deliver high-quality solutions."
+    ],
+    "imageSrc": ""
+  },
+  {
+    "role": "Full Stack Developer Intern",
+    "organisation": "Ardent Computech Pvt. Ltd",
+    "startDate": "Feb 2023",
+    "endDate": "Jul, 2023",
+    "experiences": [
+      "Gained hands-on experience in full-stack development, including front-end and back-end technologies.",
+      "Contributed to team projects and learned valuable industry practices."
+    ],
+    "imageSrc": ""
+  }
+]
