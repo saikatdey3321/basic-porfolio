@@ -1,26 +1,28 @@
 [
   {
-    "title": "Project A",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
+    "title": "Amazon Clone",
+    "imageSrc": "projects/amazone_clone.jpg",
+    "description": "An Amazon Clone replicates Amazon's core features, providing functionalities like product browsing, search, cart management, user accounts, and secure checkout to mimic the Amazon shopping experience.",
+    "skills": ["HTML", "CSS"],
     "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "source": "https://github.com/saikatdey3321/Amazone-clone"
+  },
+
+  {
+    "title": "Built a task management application",
+    "imageSrc": "projects/project.png",
+    "description": "Developed a task management application to help users create, track, prioritize, and organize tasks for efficient project and time management.",
+    "skills": ["HTML", "CSS", "REACT", "Next.js"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/saikatdey3321/react-Task-manager"
   },
   {
-    "title": "Project B",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
+    "title": "Hotel Website Developer",
+    "imageSrc": "projects/hotel_management.png",
+    "description": "A Hotel Website Developer creates websites for hotels, featuring room booking systems, amenities display, user reviews, and contact information to enhance the guest experience and drive online reservations",
+    "skills": ["HTML", "CSS", "JavaScript"],
     "demo": "https://www.example.com",
-    "source": "https://www.github.com"
-  },
-  {
-    "title": "Project C",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "source": "https://github.com/saikatdey3321/Hotel-Booking-Website"
   }
+  
 ]
